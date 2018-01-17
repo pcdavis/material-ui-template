@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import logo from './logo.svg';
 import './App.css';
-import MyAwesomeReactComponent from './components/MyAwesomeReactComponent'
+import Buttons from './components/Buttons';
+import MyAwesomeReactComponent from './components/MyAwesomeReactComponent';
 
 class App extends Component {
   render() {
@@ -15,11 +16,14 @@ class App extends Component {
           <h1 className="App-title">This is a React Template using Material Design. Do not edit it. Clone it from Github so you can use it over and over.</h1>
         </header>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          The App page is used to showcase various Material UI components
         </p>
       </div>
-
+      <h3> Action Buttons </h3>
+      <Buttons />
+      <h3> Floating Buttons </h3>
       <MyAwesomeReactComponent />
+      
 
   </MuiThemeProvider>
     );
